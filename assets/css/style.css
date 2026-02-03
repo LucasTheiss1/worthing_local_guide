@@ -1,25 +1,43 @@
 body {
-    margin: auto;
+    margin: 0;
     line-height: 1.6;
     background-color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    
+}
+
+.page {
     border: 2px solid #dddddd;
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    width: 100%;
 }
 
 .navbar {
+    
+    background-color: #ffdab9;
+    padding: 12px;
+
+}
+
+.nav-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffdab9;
-    max-width: 100%;
+    gap: 12px;
 
 }
 
-.navbar h1 {
-    
+/* Title*/
+.navbar h1 {    
     font-size: 24px;
+    margin: 0;
+        
 }
 
+/* Logo */
 .nav-logo img {
     width: 60px;
     height: 61px;
@@ -30,9 +48,10 @@ body {
 .nav-links ul {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: 10px 0 0 ;
     padding: 0;
     gap: 14px;
+    flex-wrap: wrap;
 }
 
 footer {
