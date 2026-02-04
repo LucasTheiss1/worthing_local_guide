@@ -5,61 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worthing Local Guide</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
 </head>
 <body>
-    <!-- Navigation bar-->
-    <nav class="navbar">
-        <h1>Worthing Local Guide</h1>
-        <div class="nav-logo">
-            <img src="assets/images/logo_nav_bar.jpg" alt="Worthing Local Guide Logo">
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="places.html">Places</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section-->
-     <section class="hero">
-        <h2>Discover Worthing in a Weekend</h2>
-        <p>Explore the best of Worthing, from its beautiful pier to its vibrant local shops and cafes. 
-            Your perfect weekend getaway starts here.
-        </p>
-    </section>
-
-    <div class="button">
-        <a class="btn" href="places.html">Explore Places</a>
-    </div>
-
-    <!-- Cards places-->
-     <section>
-        <!--First container with worthing pier image and title-->
-        <div class="">
-            <img src="assets/images/worthing_pier.jpg" class="card-img" alt="Worthing Pier">
-            <div class="">
-              <h3 class="">Worthing Pier</h3>
+    
+    
+    <header>
+        <div class="nav-top">
+            <span id="site-title">Worthing Guide</span>
+            <div class="nav-logo">
+                <img src="assets/images/logo_nav_bar.jpg" alt="Worthing Local Guide Logo">
             </div>
-        </div>
-        <!--Second container with National Trust image and title -->
-        <div class="">
-            <img src="assets/images/National_Trust_Cissbury_Ring2.jpg" class="card-img" alt="National Trust - Cissbury Ring">
-            <div class="">
-              <h3 class="">National Trust - Cissbury Ring</h3>
-            </div>
-        </div>
-        <!--Third container with Dome Cinema image and title-->
-        <div class="">
-            <img src="assets/images/dome_cinema_worthing.jpg" class="card-img" alt="Dome Cinema">
-            <div class="">
-              <h3 class="">Dome Cinema</h3>
-            </div>
-        </div>
-     </section>
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" id="nav-toggle" name="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">☰</label>
+            <!--Navigation bar-->
+            <nav>
+                <div class="nav-links">
+                <ul id="menu">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="places.html">Places</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>           
+    </header>
 
-     <!--Footer-->
-     <footer>© Copyright 2026 Worthing Local Guide</footer>
+    <main>
+        <!-- Hero Section-->
+         <section class="hero">
+            <h1>Discover Worthing in a Weekend</h1>
+            <p>Explore the best of Worthing, from its beautiful pier to its vibrant local shops and cafes. 
+                Your perfect weekend getaway starts here.
+            </p>
+        </section>
+        <!--Button link places page-->
+        <div class="cta">
+            <a class="btn" href="places.html">Explore Places</a>
+        </div>
+    
+        <!-- Cards places-->
+         <section class="Cards-places">
+            <!--First container with worthing pier image and title-->
+            <div class="card">
+                <img src="assets/images/worthing_pier_ok.jpg" class="card-img" alt="Worthing Pier">
+                <div class="card-content">
+                  <h3 class="card-title">Worthing Pier</h3>
+                </div>
+            </div>
+            <!--Second container with National Trust image and title -->
+            <div class="card">
+                <img src="assets/images/National_Trust_Cissbury_Ring2.jpg" class="card-img" alt="National Trust - Cissbury Ring">
+                <div class="card-content">
+                  <h3 class="card-title">National Trust - Cissbury Ring</h3>
+                </div>
+            </div>
+            <!--Third container with Dome Cinema image and title-->
+            <div class="card">
+                <img src="assets/images/dome.jpg" class="card-img" alt="Dome Cinema">
+                <div class="card-content">
+                  <h3 class="card-title">Dome Cinema</h3>
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>© Copyright 2026 Worthing Local Guide</p>
+        <ul id="social-links">
+            <li><a href="https://www.facebook.com/WorthingGuide"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/WorthingGuide"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/WorthingGuide"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <!--Font Awesome kit-->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 </html>
