@@ -5,42 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worthing Local Guide</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
 </head>
 <body>
-    <!-- Navigation bar-->
-     <div class="page">
-        <nav class="navbar">
-            <div class="nav-top">
-                <h1>Worthing Local Guide</h1>
+    <header>
+        <div class="nav-top">
+            <span id="site-title">Worthing Guide</span>
+            <div class="nav-logo">
+                <img src="assets/images/logo_nav_bar.jpg" alt="Worthing Local Guide Logo">
             </div>
-                <div class="nav-logo">
-                    <img src="assets/images/logo_nav_bar.jpg" alt="Worthing Local Guide Logo">
-                </div>
+            <!-- Mobile menu toggle -->
+            <input type="checkbox" id="nav-toggle" name="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">☰</label>
+            <!--Navigation bar-->
+            <nav>
                 <div class="nav-links">
-                <ul>
+                <ul id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="places.html">Places</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </div>           
+    </header>
 
+    <main>
         <!-- Hero Section-->
          <section class="hero">
             <h1>Contact</h1>
             <p>Have an enquiry or suggestion? Fill out the form below to get in touch with us.</p>
         </section>
+        <!-- Contact Form -->
+         <div class="container">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="brazil">Brazil</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        
+    </main>
+    <!--Footer-->
+    <footer>
+        <p>© Copyright 2026 Worthing Local Guide</p>
+        <ul id="social-links">
+            <li><a href="https://www.facebook.com/WorthingGuide"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/WorthingGuide"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/WorthingGuide"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <!--Font Awesome kit-->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 
-        <!-- Cards places-->
-         <section class="places">
-            <article class="card">
-
-            </article>
-
-         </section>
-
-         <!--Footer-->
-         <footer>© Copyright 2026 Worthing Local Guide</footer>
-     </div>
+    
 </body>
 </html>
