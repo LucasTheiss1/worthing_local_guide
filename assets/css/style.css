@@ -73,8 +73,8 @@ nav {
 
 .nav-logo {
     display: flex;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
 
 }
 
