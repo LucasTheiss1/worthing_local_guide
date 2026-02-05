@@ -43,13 +43,13 @@
 
     <main>
         <!-- Hero Section-->
-         <section class="hero">
+        <section class="hero">
             <h1>Places to visit</h1>
             <p>Explore a curated selection of the best places Worthing has to offer, 
                 from historical landmarks to vibrant local spots.
             </p>
         </section>
-        <section class="places container">
+        <div class="places container">
             <article class="place-card">
                 <div class="place-map">  
                     <iframe
@@ -57,7 +57,8 @@
                         src="https://www.google.com/maps?q=Worthing+Pier&output=embed"
                         loading="lazy"
                         title="Map to Worthing Pier"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                     
                 </div>  
                 <a href="https://www.google.com/maps?q=Worthing+Pier" target="_blank" rel="noopener">
@@ -65,30 +66,32 @@
                 </a>
           
                 <div class="place-body">
-                  <h3>Worthing Pier</h3>
+                  <h2>Worthing Pier</h2>
                   <p>Classic seaside pier with views, arcades, and nearby cafés.</p>
                 </div>
             </article>
         
             <article class="place-card">
                 <div class="place-map">
+
                     <iframe
                            class="map-frame"  
                            src="https://www.google.com/maps?q=Cissbury+Ring&output=embed"
                            loading="lazy"
                            title="Map to Cissbury Ring"
-                           referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
 
                 </div>  
                 <a href="https://www.google.com/maps?q=Cissbury+Ring" target="_blank" rel="noopener">
                   Open in Google Maps
                 </a>
               <div class="place-body">
-                <h3>Cissbury Ring</h3>
+                <h2>Cissbury Ring</h2>
                 <p>National Trust hillfort with trails and wide countryside views.</p>
               </div>
             </article>
-        </section>
+        </div>
 
 
      
