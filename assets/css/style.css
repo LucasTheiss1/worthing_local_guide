@@ -215,14 +215,87 @@ main {
     text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/*Page Places cards style */
+
+
+.places {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 20px 0;
+  
+  
+}
+
+.place-card {
+  border: 2px solid #ff9f6e;
+  border-radius: 16px;
+  overflow: hidden; /* keeps rounded corners clean */
+  /* hover style of */
+  transition: transform 0.3s ease, background 0.3s ease;  
+  margin-bottom: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.place-map {
+    /*iframe take place of background*/
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    /*----*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    background: #ffdab9;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*layout for iframe be capable to cover background of box */
+#map-frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    filter: brightness(0.97);
+}
+
+.place-body {
+    border-top: 2px solid #ff9f6e;
+    border-radius: 16px 16px;
+    background-color: white;
+    padding: 18px;
+}
+
+.place-body h3 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+}
+
+.place-body p {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+}
+
+/*Ended page places style */
+
 .container {
-  border: 1px solid #dddddd;
+  
   border-radius: 12px;
   background-color: #eeeeee;
   padding: 20px;
   display: block;
   width: fit-content;
-  margin: 0 auto;
+  margin: 16px auto;
   margin-bottom: 16px;
 
 }
