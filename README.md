@@ -163,6 +163,16 @@ Throughout the development process, several challenges were encountered and reso
 
 These challenges contributed significantly to the learning outcomes of the project and improved overall understanding of responsive and user-centric front-end development.
 
+### Balsamiq wireframe images used as model
+
+#### _Home page:_
+![Home page wireframe](assets/images/home_wireframe.png)
+
+#### _Places page:_
+![Places wireframe](assets/images/places_wireframe.png)
+
+#### _Contact page:_
+![contact wireframe](assets/images/contact_wireframe.png)
 
 ### Future Improvements
 - Enhance the contact form with back-end functionality
