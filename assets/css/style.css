@@ -185,9 +185,10 @@ main {
 }
 
 .card {
+    border: 2px solid #ff9f6e;
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     aspect-ratio: 4 / 3; /*desktop card shap*/
     
@@ -217,12 +218,13 @@ main {
     text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
 /*Page Places cards style */
 
 
 .places {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /*mobile layout*/
   gap: 18px;
   padding: 20px 0;
   
@@ -288,19 +290,14 @@ main {
   font-size: 1rem;
 }
 
+.container {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
 /*Ended page places style */
 
-.container {
-  
-  border-radius: 12px;
-  background-color: #eeeeee;
-  padding: 20px;
-  display: block;
-  width: fit-content;
-  margin: 16px auto;
-  margin-bottom: 16px;
-
-}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -411,6 +408,10 @@ footer p {
        grid-template-columns: repeat(2, 1fr); /*tablet and larger*/
    }
 
+   .places {
+       grid-template-columns: repeat(2, 1fr); /*tablet and larger places page*/
+   }
+
 
 
  
@@ -444,6 +445,10 @@ footer p {
 
     .cards-places {
         grid-template-columns: repeat(3, 1fr); /*desktop*/
+    }
+
+    .places {
+        grid-template-columns: repeat(3, 1fr); /*desktop places page*/
     }
 
     .card-img {
