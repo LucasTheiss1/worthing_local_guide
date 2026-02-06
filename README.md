@@ -128,6 +128,13 @@ All code was adapted and customised to fit this project’s structure and design
 ### CSS Validation
 ![w3c validation result](assets/images/w3c_validator_css.png)
 
+### Lighthouse report
+#### Before resizing images and convert to .webp
+![report lighthouse before resize images](assets/images/lighthouse_report1.png)
+
+#### After resizing it
+![report lighthouse after resize images](assets/images/lighthouse_report2.png)
+
 ---
 
 ## Known Issues & Improvements
