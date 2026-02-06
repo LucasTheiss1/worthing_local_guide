@@ -106,8 +106,12 @@ All code was adapted and customised to fit this project’s structure and design
 
 ### Media
 - Images sourced via Google Images for educational purposes
-- Worthing Coat of Arms image sourced from:  
-  https://en.wikipedia.org/wiki/Worthing
+   - Worthing Pier image sourced from:
+      https://commons.wikimedia.org/wiki/File:Worthing_Pier,_August_2018.jpg
+   - Dome cinema image sourced from:
+      https://jackbeard.wordpress.com/2013/04/22/final-image-6-8-10-the-dome-worthing/
+   - Worthing Coat of Arms image sourced from:  
+     https://en.wikipedia.org/wiki/Worthing
 
 ### Tools & Libraries
 - Fonts provided by Google Fonts
