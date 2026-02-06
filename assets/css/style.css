@@ -219,7 +219,7 @@ main {
 }
 
 
-/*Page Places cards style */
+/*Page Places cards style was inpired by collegue and adapted to this project.*/
 
 
 .places {
@@ -258,7 +258,8 @@ main {
     text-decoration: none;
 }
 
-/*layout for iframe be capable to cover background of box */
+/*layout for iframe be capable to cover background of box 
+exemple found in w3 schools and from hands-on course exercises */
 .map-frame {
     position: absolute;
     inset: 0;
@@ -298,7 +299,7 @@ main {
 
 /*Ended page places style */
 
-/*Contact page style*/
+/*Contact page style inspired from w3 schools and adapted to this project*/
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
